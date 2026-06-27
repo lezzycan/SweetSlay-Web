@@ -14,7 +14,7 @@ defineProps({
     <div class="bname gold">{{ bundle.name }}</div>
     <div class="blabel">{{ bundle.label }}</div>
     <p class="desc">{{ bundle.desc }}</p>
-    <div class="price gold">{{ money(bundle.price) }}</div>
+    <div class="price">{{ money(bundle.price) }}</div>
     <button class="add" @click="addToCart(bundle.name + ' ' + bundle.label, bundle.desc, bundle.price)">
       Add to bag
     </button>
@@ -30,7 +30,7 @@ defineProps({
 .bname { font-family: 'Parisienne', cursive; font-size: 2.4rem; line-height: 0.95; }
 .blabel { font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.82rem; margin-top: 2px; }
 .desc { font-size: 0.9rem; color: var(--ink-soft); margin: 11px 0 16px; min-height: 42px; }
-.price { display: inline-block; font-family: 'Parisienne', cursive; font-size: 3rem; line-height: 1; padding: 2px 28px; border-radius: 999px; background: var(--cream-deep); border: 1.5px dashed var(--gold); }
+.price { display: inline-block; color: var(--gold-deep); font-family: 'Parisienne', cursive; font-size: 3rem; line-height: 1; padding: 2px 28px; border-radius: 999px; background: var(--cream-deep); border: 1.5px dashed var(--gold); }
 .add { margin-top: 16px; cursor: pointer; width: 100%; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.68rem; padding: 13px; border-radius: 999px; background: linear-gradient(120deg, #e58fb3, #e76f9e); color: #fff; border: none; transition: transform 0.15s; }
 .add:hover { transform: translateY(-2px); }
 </style>

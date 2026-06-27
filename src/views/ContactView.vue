@@ -7,6 +7,8 @@ const c = ref({ name: '', email: '', msg: '' })
 const sent = ref(false)
 const waHref = computed(() => `https://wa.me/${STORE.whatsapp}`)
 const mailHref = computed(() => `mailto:${STORE.email}`)
+const igHref = computed(() => `https://instagram.com/${STORE.instagram}`)
+const ttHref = computed(() => `https://tiktok.com/@${STORE.tiktok}`)
 
 function send() {
   if (!c.value.name || !c.value.email || !c.value.msg) {
@@ -39,8 +41,8 @@ function send() {
         <h3>Reach us</h3>
         <div class="contact-line"><span class="ci">📧</span><div><strong>Email</strong><br /><a :href="mailHref">{{ STORE.email }}</a></div></div>
         <div class="contact-line"><span class="ci">💬</span><div><strong>WhatsApp</strong><br /><a :href="waHref" target="_blank" rel="noopener">Message us to order</a></div></div>
-        <div class="contact-line"><span class="ci">📸</span><div><strong>Instagram</strong><br /><a href="https://instagram.com/sweet2slay_" target="_blank" rel="noopener">@SWEET2SLAY_</a></div></div>
-        <div class="contact-line"><span class="ci">🎵</span><div><strong>TikTok</strong><br /><a href="https://tiktok.com/@sweet2slay_" target="_blank" rel="noopener">@SWEET2SLAY_</a></div></div>
+        <div class="contact-line"><span class="ci">📸</span><div><strong>Instagram</strong><br /><a :href="igHref" target="_blank" rel="noopener">@{{ STORE.instagram }}</a></div></div>
+        <div class="contact-line"><span class="ci">🎵</span><div><strong>TikTok</strong><br /><a :href="ttHref" target="_blank" rel="noopener">@{{ STORE.tiktok }}</a></div></div>
         <p class="note">Orders are placed in seconds through the cart, then sent straight to us on WhatsApp or email. We'll confirm your total and how to pay.</p>
       </div>
     </div>

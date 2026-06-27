@@ -1,11 +1,16 @@
 /* =====================================================================
-   Contact Details & Product Data
+   EDIT EVERYTHING HERE
+   ---------------------------------------------------------------------
+   This is the only file you need to touch for day-to-day changes:
+   your contact details, prices, flavours, bundles and extras.
    ===================================================================== */
 
 /* --- your shop details --- */
 export const STORE = {
-  whatsapp: '+447835411110',         
-  email: 'sweet2slay@gmail.com',     
+  whatsapp: '447835411110',          // your WhatsApp number, digits only, no "+"
+  email: 'sweet2slay@gmail.com',     // where orders / messages land
+  instagram: 'sweet2slayofficial',          // your Instagram handle (without the @)
+  tiktok: 'sweet2slayofficial',             // your TikTok handle (without the @)
   currency: '£',
 }
 

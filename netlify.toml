@@ -1,0 +1,14 @@
+# Netlify configuration for Sweet2Slay (Vue + Vite)
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Send all non-file, non-function routes to the Vue app so /shop, /about etc. work.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

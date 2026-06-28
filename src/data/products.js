@@ -1,16 +1,11 @@
-/* =====================================================================
-   EDIT EVERYTHING HERE
-   ---------------------------------------------------------------------
-   This is the only file you need to touch for day-to-day changes:
-   your contact details, prices, flavours, bundles and extras.
-   ===================================================================== */
 
-/* --- your shop details --- */
+
+
 export const STORE = {
-  whatsapp: '447835411110',          // your WhatsApp number, digits only, no "+"
-  email: 'sweet2slay@gmail.com',     // where orders / messages land
-  instagram: 'sweet2slayofficial',          // your Instagram handle (without the @)
-  tiktok: 'sweet2slayofficial',             // your TikTok handle (without the @)
+  whatsapp: '447835411110',          
+  email: 'sweet2slay@gmail.com',     
+  instagram: 'sweet2slayofficial',          
+  tiktok: 'sweet2slayofficial',             
   currency: '£',
 }
 
@@ -23,8 +18,7 @@ export const PAY = {
 /* --- price of a single lip oil --- */
 export const LIP_PRICE = 5.0
 
-/* --- collections of lip oils ---
-   img matches a file in /public/images/ */
+
 export const COLLECTIONS = [
   {
     name: 'Nude & Sweet',
